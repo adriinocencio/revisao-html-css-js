@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação por idade</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="content">
+        <h3>Classificação por idade</h3>
+        <form onsubmit="return verificarFaseVida(event)">
+            <label class="label">Digite seu nome:</label><br><br>
+            <input class="input" type="text" name="nome" id="nome" placeholder="Exemplo: Ana"><br><br>
+    
+            <label class="label">Digite sua idade:</label><br><br>
+            <input class="input" type="text" name="idade" id="idade" placeholder="Exemplo: 14"><br><br>
+    
+            <input class="btn" type="submit" value="Avaliar a idade">
+        </form>
+        <div id="resultado" class="text"></div>
+    </div>
+</body>
+</html>
